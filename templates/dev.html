@@ -1,16 +1,21 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-developer
+Developer
 {% endblock %}
 
 {% block style %}
 <style>
-
-    #card{
+    #card {
         margin-top: 20px;
         margin-bottom: 10px;
     }
+
+    .social-icons {
+        text-align: center;
+        margin-top: 15px;
+    }
+
     .fa {
         padding: 8px;
         font-size: 30px;
@@ -18,6 +23,7 @@ developer
         text-align: center;
         text-decoration: none;
         margin: 5px 2px;
+        border-radius: 50%;
     }
 
     .fa:hover {
@@ -28,10 +34,12 @@ developer
         background: #007bb5;
         color: white;
     }
+
     .fa-instagram {
         background: #bd1748;
         color: white;
     }
+
     .fa-facebook {
         background: #3B5998;
         color: white;
@@ -40,23 +48,23 @@ developer
 {% endblock %}
 
 {% block body %}
-<center>
-    <div id = "card">
-        <div class="card" style="width: 40rem;">
-            
-            <div class="card-body" >
-              <h5 class="card-title">Jayanth Shanigarapu</h5>
-              <h6  class="card-title">Hi! Everyone</h6>
-              <p class="card-text" >I am currently pursuing MCA in Computer Applications from Omega PG College, Hyderabad.
-               My Project title is <b>"A Deep Learning Approach to Improving Image Captioning by Leveraging Knowledge Graphs".</b>
-              </p>
-            </div>
+<div class="container" id="card">
+    <div class="card mx-auto" style="width: 40rem;">
+        <div class="card-body text-center">
+            <h5 class="card-title">Jayanth Shanigarapu</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Hi! Everyone</h6>
+            <p class="card-text">
+                I have completed my MCA in Computer Applications from Omega PG College, Hyderabad.
+                My project title is <b>"A Deep Learning Approach to Improving Image Captioning by Leveraging Knowledge Graphs".</b>
+            </p>
         </div>
     </div>
-    <div id="social">
+
+    <div class="social-icons">
         <a href="https://www.linkedin.com/in/jayanth-shanigarapu-14bb8428b/" target="_blank" class="fa fa-linkedin"></a>
         <a href="https://www.instagram.com/__mr__j_a__y______/" target="_blank" class="fa fa-instagram"></a>
-        
+        <!-- Optional: Add Facebook icon if you have a link -->
+        <!-- <a href="https://www.facebook.com/your-profile" target="_blank" class="fa fa-facebook"></a> -->
     </div>
-</center>
-{% block style %}
+</div>
+{% endblock %}
